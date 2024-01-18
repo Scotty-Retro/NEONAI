@@ -1,0 +1,82 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <carousel name="systemcarousel">
+          <type>vertical_wheel</type>
+		<color>00000000</color>
+          <pos>0.29 0</pos>
+          <size>1 1</size>
+<logoScale>1.5</logoScale>
+<logoSize>0.14 0.240</logoSize>
+<maxLogoCount>20</maxLogoCount>
+<logoRotation>16</logoRotation>
+<logoRotationOrigin>2.2 0.55</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+		<text name="logoText">
+		<pos>0.2 0.8</pos>
+	    <fontSize>0.04</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.3 0.3</size>
+		<alignment>center</alignment>
+		<rotation>0</rotation>
+        <color>FF10F0</color>
+		<glowColor>1F51FF</glowColor>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>999</zIndex>
+    </text>
+
+
+      <text name="systemInfo">
+        <pos>-0.2 0.09</pos>
+		<glowColor>1F51FF</glowColor>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <fontSize>0.060</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/scotty.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>  
+       <roundCorners>0.06</roundCorners>            
+        <pos>0.0925 0.289</pos>
+        <size>0.385 0.4</size>
+        <delay>0.1</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+      <storyboard>
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+      </storyboard>
+        <zIndex>1</zIndex>
+     </video>
+	 	
+
+	   <image name="rightcarouselover" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>1 1</size>
+         <path>./_inc/rightcarousel.png</path>
+		 <zIndex>25</zIndex>
+      </image> 
+
+	       <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.55 0.985</pos>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+
+       </view>
+    </theme>

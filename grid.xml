@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+   <!---------------------------grid------------------------------------- -->
+
+   <view name="grid">
+	    
+     <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.65 0.985</pos>
+	<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+	  <video name="gridbg" extra="true">
+		<pos>0 0</pos>
+		<maxSize>1 1</maxSize>
+		<color>ffffff</color>
+            <path>./_inc/gridbg.mp4</path> 
+		<zIndex>1</zIndex>
+	  </video>
+	 
+   
+   		<image name="md_thumbnail">
+			<origin>0.5 0.5</origin>
+			<pos>0.87 0.5</pos>
+			<maxSize>0.14 0.2</maxSize>
+	   <storyboard event="activate">
+        <animation property="offsetX" from="0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+           </storyboard>
+			<zIndex>900</zIndex>
+		</image>
+
+   		<image name="md_marquee">
+			<pos>0.62 0.134</pos>
+			<maxSize>0.253 0.199</maxSize>
+			<origin>0.5 0.5</origin>
+			<linearSmooth>true</linearSmooth>
+	   <storyboard event="activate">
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+           </storyboard>
+			<zIndex>900</zIndex> 
+		</image>
+   	
+     <video name="md_video">
+		<color>ffffff</color>
+		<size>0.5 0.5</size>
+		<origin>0.5 0.5</origin>
+		<pos>0.5 0.45</pos>
+		<delay>0</delay>
+	    <loops>3</loops>
+		<effect>none</effect>		 
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+        <showSnapshotDelay>true</showSnapshotDelay>
+	   <storyboard event="activate">
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+           </storyboard>
+		<zIndex>3</zIndex>
+     </video>
+
+      <text name="md_description">
+         <pos>0.23 0.75</pos>
+         <size>0.6 0.13</size>
+         <color>ffffff</color>
+         <alignment>left</alignment> 
+        <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>  
+         <zIndex>999</zIndex>         
+      </text>
+
+	<imagegrid name="gamegrid">
+	  <pos>0 0.05</pos>
+      <size>0.30 0.89</size>
+      <padding>0.08 0 0.08 0</padding>
+      <scrollDirection>vertical</scrollDirection>
+      <autoLayout>1 7</autoLayout>
+      <autoLayoutSelectedZoom>2.5</autoLayoutSelectedZoom>
+      <margin>0 0.015</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+      <imageSource>marquee</imageSource>
+      <gameImage>./_inc/game.png</gameImage>
+      <zIndex>300</zIndex>  
+    </imagegrid>
+ 
+    
+<gridtile name="default">
+<padding>1 1</padding>
+<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+<imageSizeMode>maxSize</imageSizeMode>
+<imageColor>FFFFFF</imageColor>
+<reflexion>0.09 0.0</reflexion>
+</gridtile>
+
+<gridtile name="selected">
+<backgroundCenterColor>ff000000</backgroundCenterColor>
+<backgroundEdgeColor>ff000000</backgroundEdgeColor>
+<padding>55 13</padding>
+<imageColor>FFFFFF</imageColor>
+</gridtile>
+
+<text name="gridtile">
+<color>1C00ff00</color>
+<backgroundColor>00000000</backgroundColor>
+<fontSize>0.022</fontSize>
+<alignment>center</alignment>
+<size>1 0.24</size>
+</text>
+
+<text name="gridtile_selected">
+<color>1C00ff00</color>
+<glowColor>${glowColor}</glowColor>
+<glowSize>0</glowSize>
+</text>
+	
+
+	<image name="gridblack" extra="true">
+		<path>./_inc/gridblack.png</path>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<origin>0 0</origin>
+		<zIndex>2</zIndex>
+	</image>
+
+	
+	<text name="md_name">
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+		<fontSize>0.05</fontSize>
+		<pos>0.23 0.9</pos>
+		<size>0.6 0.0248148148148148</size>
+		<alignment>center</alignment>
+		<color>fff01f</color>
+		<glowColor>10101099</glowColor>			
+		<glowSize>3</glowSize>	
+	    <zIndex>450</zIndex>		
+	</text>
+	
+		<text name="logoText">
+		<pos>0.691 0.444</pos>
+	    <fontSize>0.11</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.57 0.1</size>
+		<alignment>center</alignment>
+        <color>FFFFFFB3</color>
+        <forceUppercase>1</forceUppercase>
+	    <rotation>-90</rotation>   
+	    <zIndex>999</zIndex>
+    </text>	
+</view>
+   
+   </theme>

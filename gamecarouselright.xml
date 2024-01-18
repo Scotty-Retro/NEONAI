@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+	<customView name="gamecarouselright" inherits="gamecarousel">
+<gamecarousel name="gamecarousel">
+<zIndex>43</zIndex>	      
+          <type>vertical_wheel</type>
+          <pos>0.28 0</pos>
+          <size>1 1</size>
+<logoScale>1.5</logoScale>
+<logoSize>0.150 0.260</logoSize>
+<color>00000000</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>8</logoRotation>
+<logoRotationOrigin>3 0.2</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+    <rating name="md_rating">
+     <pos>0.536 0.78</pos>
+      <size>0.05 0.05</size>
+      <alignment>center</alignment>
+      <filledPath>./_inc/filled.png</filledPath>
+      <unfilledPath>./_inc/unfilled.png</unfilledPath>
+    </rating>
+
+	  <image name="md_marquee">
+       <pos>0.3 0.1</pos>
+       <maxSize>0.20 0.2</maxSize>
+       <zIndex>10</zIndex>
+       </image>
+
+	   <image name="vidbg" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>1 1</size>
+         <path>./_inc/carouselarcadebg.png</path>
+		 <zIndex>25</zIndex>
+      </image>
+
+     <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.56 0.985</pos>
+       <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+	    
+    <text name="gamecarouselLogoText">
+		<color>A833FF</color>
+		<lineSpacing>1.0</lineSpacing>
+        <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+        <fontSize>0.030</fontSize>
+    </text>	
+		
+     <video name="md_video">
+		<color>ffffff</color>
+        <pos>0.298 0.53</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.44 0.63</size>
+		<delay>0.1</delay>
+		<effect>none</effect>		 
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>1</zIndex>
+     </video> 
+	
+      <text name="md_description">
+         <pos>0.08 0.83</pos>
+         <size>0.445 0.1</size>
+         <color>ffffff</color>
+         <alignment>left</alignment> 
+        <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>  
+         <zIndex>999</zIndex>         
+      </text>
+	
+	</customView>
+</theme>

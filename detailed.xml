@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------detailed------------------------------------- -->
+
+ 
+   <view name="detailed">
+         <textlist name="gamelist">
+         <zIndex>5</zIndex>
+         <selectorColor>1c1c1c00</selectorColor> 
+         <selectedColor>A833FF</selectedColor>
+         <primaryColor>FFFFFF</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>	      
+         <pos>0.563 0.12</pos>
+         <size>0.36 0.65</size>
+         <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+         <fontSize>0.04</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <alignment>center</alignment>      
+      </textlist>
+	  	  	  
+      <image name="md_image">
+	  	<pos>0.29 0.54</pos>
+        <origin>0.5 0.5</origin>
+		<size>0.4 0.50</size>
+         <zIndex>3</zIndex>         
+      </image>  
+
+      <image name="detailedback" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/detailed.png</path>
+         <zIndex>1</zIndex>          
+      </image> 
+	  
+     <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5 0.985</pos>
+       <fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+	<image name="logo03" extra="true">
+        <pos>0.22 0.8</pos>
+        <maxSize>0.15 0.15</maxSize>
+		<path>./default/_inc/logo.png</path>
+		<path>./_inc/clearlogos/${system.theme}.png</path>
+		<color>ffffff</color>
+	    <zIndex>400</zIndex>
+	</image>
+
+
+		<text name="logoText" extra="true">
+		<pos>0.691 0.444</pos>
+	    <fontSize>0.11</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.57 0.1</size>
+		<alignment>center</alignment>
+        <color>1F51FF</color>
+        <forceUppercase>1</forceUppercase>
+	    <rotation>-90</rotation>   
+	    <zIndex>999</zIndex>
+    </text>
+	  
+
+	  	<video name="md_video">
+			<pos>0.29 0.54</pos>
+			<size>0.4 0.50</size>
+			<origin>0.5 0.5</origin>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo> 
+			<showSnapshotDelay>false</showSnapshotDelay>
+		    <loops>3</loops>
+			<delay>0</delay> 
+			<effect>none</effect>
+			<zIndex>4</zIndex> 
+		</video>
+
+	  <image name="md_marquee">
+       <pos>0.3 0.13</pos>
+       <maxSize>0.20 0.2</maxSize>
+       <zIndex>10</zIndex>
+       </image>
+
+
+      <rating name="md_rating">
+         <zIndex>5</zIndex>       
+         <pos>0.718 0.89</pos>
+         <size>0.04 0.04</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+                           
+      <text name="md_description">
+         <pos>0.57 0.74</pos>
+         <size>0.35 0.15</size>
+	<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+         <color>ffffff</color>
+         <alignment>left</alignment>   
+         <zIndex>5</zIndex>         
+      </text>
+    </view>
+   
+   </theme>

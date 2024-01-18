@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+
+<!---------------------------basic------------------------------------- -->
+
+<view name="basic">
+      <textlist name="gamelist">      
+         <selectorColor>1c1c1c00</selectorColor>                     
+         <pos>0.3 0.185</pos>
+         <size>0.38 0.785</size>
+         <selectedColor>A833FF</selectedColor>
+         <primaryColor>FFFFFF</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+	<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+         <fontSize>0.035</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>
+         <zIndex>42</zIndex>                          
+      </textlist>
+   
+       <rating name="md_rating">
+     <pos>0.4 0.8</pos>
+      <size>0.1 0.1</size>
+         <path>./_inc/dragonhead.png</path>
+      <filledPath>./_inc/dragonhead.png</filledPath>
+      <unfilledPath>./_inc/empty.png</unfilledPath>
+    </rating>
+               
+ 	   <image name="girlsleft" extra="true">
+        <pos>0.15 0.5</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.3 1</size>
+	 <path>./_inc/aiart/default.png</path>
+         <path>./_inc/NEWNEONLOGOS/${system.theme}.png</path>
+		 <zIndex>999</zIndex>
+      </image>
+
+ 	   <image name="girlsright" extra="true">
+        <pos>0.85 0.5</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.3 1</size>
+	 <path>./_inc/aiart/default.png</path>
+         <path>./_inc/NEWNEONLOGOS/${system.theme}.png</path>
+		 <zIndex>999</zIndex>
+      </image>
+
+	       <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.55 0.985</pos>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+	   <image name="basicbg" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+          <path>./_inc/basic.png</path>
+		 <zIndex>1</zIndex>
+      </image>
+
+
+		<image name="logos" extra="true">
+		<pos>0.35 -0.005</pos>
+         <path>./_inc/clearlogos/${system.theme}.png</path>
+	    <size>0.2 0.2</size>
+		<alignment>center</alignment>  
+<storyboard repeat="forever">
+<animation property="x" from="0.3" to="0.5" duration="3000" autoreverse="true" begin="100" repeat="forever"/>
+</storyboard>
+	    <zIndex>998</zIndex>
+    </image>
+</view>
+   
+   </theme>

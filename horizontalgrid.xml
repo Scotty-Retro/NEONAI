@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+	<customView name="Horizontal Grid" inherits="grid">
+	    
+     <helpsystem name="help">
+	 <iconColor>A833FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.65 0.985</pos>
+       <fontPath>./_inc/fonts/PLAYBILL.ttf</fontPath>
+     </helpsystem>
+
+	  <video name="gridbg" extra="true">
+       <visible>false</visible>
+	  </video>
+	 
+   
+   		<image name="md_thumbnail">
+			<origin>0.5 0.5</origin>
+			<pos>0.89 0.55</pos>
+			<maxSize>0.2 0.3</maxSize>
+			<zIndex>900</zIndex>
+		</image>
+
+   		<image name="md_marquee">
+       <visible>false</visible>
+		</image>
+   	
+     <video name="md_video">
+		<color>ffffff</color>
+		<size>0.277 0.27</size>
+		<origin>0.5 0.5</origin>
+		<pos>0.505 0.3375</pos>
+	    <loops>3</loops>
+		<effect>none</effect>		 
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+		<zIndex>1</zIndex>
+     </video>
+
+	<imagegrid name="gamegrid">
+	  <pos>0 0.3</pos>
+      <size>1 1</size>
+      <padding>0 0 0 0</padding>
+      <scrollDirection>horizontal</scrollDirection>
+      <autoLayout>3 1</autoLayout>
+      <autoLayoutSelectedZoom>1.5</autoLayoutSelectedZoom>
+      <margin>0.15 0.015</margin>
+      <centerSelection>true</centerSelection>
+      <scrollLoop>true</scrollLoop>
+      <imageSource>marquee</imageSource>
+      <gameImage>./_inc/game.png</gameImage>
+      <zIndex>300</zIndex>  
+    </imagegrid>
+ 
+    
+<gridtile name="default">
+<padding>1 1</padding>
+<backgroundCenterColor>FFFFFF00</backgroundCenterColor>
+<backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
+<imageSizeMode>maxSize</imageSizeMode>
+<imageColor>FFFFFF</imageColor>
+<reflexion>0.09 0.0</reflexion>
+</gridtile>
+
+<gridtile name="selected">
+<backgroundCenterColor>ff000000</backgroundCenterColor>
+<backgroundEdgeColor>ff000000</backgroundEdgeColor>
+<padding>55 13</padding>
+<imageColor>FFFFFF</imageColor>
+</gridtile>
+
+<text name="gridtile">
+<color>1C00ff00</color>
+<backgroundColor>00000000</backgroundColor>
+<fontSize>0.022</fontSize>
+<alignment>center</alignment>
+<size>1 0.24</size>
+</text>
+
+<text name="gridtile_selected">
+<color>A833FF</color>
+<glowColor>${glowColor}</glowColor>
+<glowSize>0</glowSize>
+</text>
+
+      <text name="md_description">
+        <visible>false</visible> 
+	</text>
+	
+	<text name="gridtile">
+        <visible>false</visible> 
+	</text>
+
+	<image name="horizontalbg" extra="true">
+		<path>./_inc/horizontalbg.png</path>
+		<size>1 1</size>
+		<pos>0 0</pos>
+		<origin>0 0</origin>
+		<zIndex>5</zIndex>
+	</image>
+
+	
+	<text name="md_name">
+		<fontPath>./_inc/fonts/PLAYBILL.ttf</fontPath>
+		<fontSize>0.05</fontSize>
+		<pos>0.15 0.08</pos>
+		<size>0.7 0.0248148148148148</size>
+		<alignment>center</alignment>
+		<color>A833FF</color>
+		<glowColor>10101099</glowColor>			
+		<glowSize>3</glowSize>	
+	    <zIndex>450</zIndex>		
+	</text>
+
+	<image name="logo03">
+        <visible>false</visible> 
+	</image>
+	
+		<text name="logoText">
+		<pos>0.691 0.444</pos>
+	    <fontSize>0.11</fontSize>
+		<fontPath>./_inc/fonts/PLAYBILL.ttf</fontPath>
+	    <size>0.57 0.1</size>
+		<alignment>center</alignment>
+        <color>FFFFFFB3</color>
+        <forceUppercase>1</forceUppercase>
+	    <rotation>-90</rotation>   
+	    <zIndex>999</zIndex>
+    </text>	
+	</customView>
+</theme>

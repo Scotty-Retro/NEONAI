@@ -1,0 +1,53 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+<carousel name="systemcarousel">
+<defaultTransition>fade</defaultTransition>
+<zIndex>999</zIndex>
+<maxLogoCount>3.5</maxLogoCount>
+<color>ffffff00</color>
+<colorEnd>ffffff00</colorEnd>
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
+<logoSize>1 1</logoSize>
+<logoScale>1.025</logoScale>
+<size>1 1</size>
+<pos>0 0</pos>
+</carousel>
+
+		<text name="logoText">
+		<pos>0.2 0.8</pos>
+	    <fontSize>0.04</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.3 0.3</size>
+		<alignment>center</alignment>
+		<rotation>0</rotation>
+        <color>FF10F0</color>
+		<glowColor>1F51FF</glowColor>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>999</zIndex>
+    </text>
+
+
+      <text name="systemInfo">
+		<glowColor>1F51FF</glowColor>
+        <pos>0 0.9</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <fontSize>0.060</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+	 	  
+	       <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.525 0.985</pos>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+       </view>
+    </theme>

@@ -1,0 +1,101 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+<carousel name="systemcarousel">
+<defaultTransition>fade</defaultTransition>
+<zIndex>3</zIndex>
+<maxLogoCount>1</maxLogoCount>
+<color>ffffff00</color>
+<colorEnd>ffffff00</colorEnd>
+<color>00000000</color>
+<colorEnd>00000000</colorEnd>
+<logoSize>0.11 0.11</logoSize>
+<logoScale>2</logoScale>
+<size>1 1</size>
+<pos>0 -0.31</pos>
+</carousel>
+
+		<text name="logoText">
+		<pos>0.2 0.8</pos>
+	    <fontSize>0.04</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.3 0.3</size>
+		<alignment>center</alignment>
+		<rotation>0</rotation>
+        <color>FF10F0</color>
+		<glowColor>1F51FF</glowColor>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>20</zIndex>
+    </text>
+
+
+      <text name="systemInfo">
+		<glowColor>1F51FF</glowColor>
+        <pos>0 0.01</pos>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+  		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <fontSize>0.060</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+
+	   <image name="wallpaperbg" extra="true">
+        <pos>0.5 0.68</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.6 0.58</size>
+	 <path>./_inc/AIART/default.png</path>
+         <path>./_inc/AIART/${system.theme}.png</path>
+      <storyboard>
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+      </storyboard>
+		 <zIndex>1</zIndex>
+      </image>
+
+	   <image name="arcadebg" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>1 1</size>
+         <path>./_inc/arcadebg.png</path>
+		 <zIndex>25</zIndex>
+      </image>
+	 	
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/scotty.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>              
+        <pos>0.5 0.682</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.59 0.57</size>
+        <delay>0.5</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+      <storyboard>
+        <animation property="offsetX" from="1.2" to="0" duration="2500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="2500" mode="easeIn" />
+      </storyboard>
+        <zIndex>2</zIndex>
+     </video>
+
+	   <video name="arcadetop" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.2</pos>
+         <size>0.75 0.3</size>
+         <path>./_inc/arcadetop.mp4</path>
+		 <zIndex>1</zIndex>
+      </video> 
+ 
+	       <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.03</fontSize>
+     <origin>0.5 0.5</origin>
+     <pos>0.5125 0.985</pos>
+ 		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+
+       </view>
+    </theme>
