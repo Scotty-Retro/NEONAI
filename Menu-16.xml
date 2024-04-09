@@ -1,0 +1,87 @@
+<theme>
+   <formatVersion>7</formatVersion>
+
+      <view name="system">
+
+     <carousel name="systemcarousel">
+		<type>vertical</type>
+		<pos>0.015 0</pos>
+		<size>1 0.98</size>
+		<origin>0 0</origin>
+		<color>00000000</color>
+		<logoSize>0.163 0.163</logoSize>
+		<logoAlignment>right</logoAlignment>
+		<maxLogoCount>7</maxLogoCount>
+		<defaultTransition>instant</defaultTransition>	
+		<zIndex>50</zIndex>
+	 </carousel>
+
+		<text name="logoText">
+		<pos>0.2 0.8</pos>
+	    <fontSize>0.04</fontSize>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <size>0.3 0.3</size>
+		<alignment>center</alignment>
+		<rotation>0</rotation>
+        <color>FF10F0</color>
+		<glowColor>1F51FF</glowColor>
+        <forceUppercase>1</forceUppercase>   
+	    <zIndex>999</zIndex>
+    </text>
+
+
+      <text name="systemInfo">
+        <pos>-0.1 0.85</pos>
+		<glowColor>1F51FF</glowColor>
+        <backgroundColor>00000000</backgroundColor>
+        <color>ffffff</color> 
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+	    <fontSize>0.060</fontSize>
+        <zIndex>999</zIndex>
+      </text> 
+
+	 <video name="backgroundvideo" extra="true">
+        <default>./_inc/scotty.mp4</default>
+        <visible>true</visible>
+        <path>{random}</path>             
+        <pos>0 0</pos>
+        <size>0.82 0.95</size>
+        <delay>0.1</delay>
+        <showSnapshotNoVideo>false</showSnapshotNoVideo>
+        <showSnapshotDelay>false</showSnapshotDelay>
+        <color>FFFFFF</color>
+      <storyboard>
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+      </storyboard>
+        <zIndex>1</zIndex>
+     </video>
+	 	
+
+	   <image name="icons" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.5 0.5</pos>
+         <size>1 1</size>
+      <path>./_inc/icons/default.png</path>
+       <path>./_inc/icons/${system.theme}.png</path>
+		 <zIndex>25</zIndex>
+      </image> 
+
+	   <image name="new logobg" extra="true">
+         <origin>0.5 0.5</origin>
+         <pos>0.4 0.15</pos>
+         <size>1 1</size>
+       <path>./_inc/newlogobg/${system.theme}.png</path>
+		 <zIndex>24</zIndex>
+      </image> 
+
+	       <helpsystem name="help">
+	 <iconColor>1F51FF</iconColor>
+     <fontSize>0.035</fontSize>
+     <pos>0 0.975</pos>
+		<fontPath>./_inc/fonts/RobotsReborn.ttf</fontPath>
+     </helpsystem>
+
+
+       </view>
+    </theme>

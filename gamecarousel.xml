@@ -28,6 +28,17 @@
       <unfilledPath>./_inc/unfilled.png</unfilledPath>
     </rating>
 
+	   <image name="sidelogos" extra="true">
+        <pos>0.62 -0.05</pos>
+        <size>0.35 1</size>
+         <path>./_inc/sidelogos/${system.theme}.png</path>
+      <storyboard>
+        <animation property="offsetX" from="-0.2" to="0" duration="500" mode="easeOutCubic" />
+        <animation property="opacity" from="0" to="1" duration="500" mode="easeIn" />
+      </storyboard>
+		 <zIndex>999</zIndex>
+      </image>
+
 	  <image name="md_marquee">
        <pos>0.5 0.12</pos>
        <maxSize>0.20 0.2</maxSize>
@@ -39,7 +50,7 @@
          <pos>0.5 0.5</pos>
          <size>1 1</size>
          <path>./_inc/vidbg.png</path>
-		 <zIndex>2</zIndex>
+		 <zIndex>3</zIndex>
       </image>
 
      <helpsystem name="help">
@@ -66,8 +77,15 @@
 		<effect>none</effect>		 
         <showSnapshotNoVideo>false</showSnapshotNoVideo>
         <showSnapshotDelay>false</showSnapshotDelay>
-		<zIndex>1</zIndex>
+		<zIndex>2</zIndex>
      </video> 
+
+     <image name="md_image">
+        <pos>0.507 0.46</pos>
+        <origin>0.5 0.5</origin>
+        <size>0.475 0.506</size>
+         <zIndex>1</zIndex>         
+      </image> 
 	
       <text name="md_description">
          <pos>0.215 0.78</pos>
